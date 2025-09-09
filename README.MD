@@ -2,13 +2,13 @@
 
 **InjectJS** is a lightweight (~240 lines) utility that modularizes your web content without a CMS. It injects external HTML, CSS, and JavaScript files directly into your pages, making projects easier to maintain, more organized, and more reusable.  
 
-InjectJS uses the native **`XMLHttpRequest()`** function to fetch and insert content. This ensures it works across all server technologies while avoiding any CORS issues.
+InjectJS uses the native **`XMLHttpRequest()`** function to fetch and insert content. This means it works cleanly across all server technologies and avoids any CORS issues.
 
 ---
 
 ## Key Features
 - **Modular content loading** — pull in external `.html` files and inject them where needed.  
-- **Separation of concerns** — keep `<head>`, `<link>`, and `<script>` elements in dedicated files.  
+- **Separation of concerns** — keep `<head>`, `<css>`, and `<script>` elements in dedicated files.  
 - **Lightweight** — pure vanilla JavaScript (~240 lines).  
 - **Server-agnostic** — no special setup required; bypasses CORS restrictions.  
 - **Reusable** — works with any HTML structure you define.  
