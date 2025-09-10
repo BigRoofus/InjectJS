@@ -31,6 +31,5 @@ InjectJS uses the native **`XMLHttpRequest()`** function to fetch and insert con
   <link rel="stylesheet" href="css/default.css">
   <!-- more head elements... -->
 </head>
-
-
+```
 The <in-ject> tag replaces itself with the file you specify (default_head.html here).
