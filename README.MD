@@ -30,7 +30,9 @@ The ```<in-ject>``` tag replaces itself with the file you specify
   <in-ject src="components/welcome.html"></in-ject>
   <in-ject src="components/print_copyright.html"></in-ject>
 </body>
+```
 
+```html
 <!-- default_head.html -->
 <head>
   <meta charset="UTF-8">
@@ -38,15 +40,18 @@ The ```<in-ject>``` tag replaces itself with the file you specify
   <link rel="stylesheet" href="css/default.css">
   <!-- more head elements... -->
 </head>
+```
 
+```html
 <!-- print_copyright.html -->
 <div style="text-align: center;">
   <span>
     &copy;<script>${new Date().getFullYear()}</script> Modest Records Nashville
   </span>
 </div>
- 
+```
+
+```html
 <!-- welcome.html -->
 Welcome to the best site ever!
-
 ```
