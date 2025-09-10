@@ -9,7 +9,7 @@ InjectJS uses the native **`XMLHttpRequest()`** function to fetch and insert con
 ## Key Features
 - **Modular content loading** — pull in external `.html` files and inject them where needed.  
 - **Separation of concerns** — keep `<head>`, `<css>`, and `<script>` elements in dedicated files.  
-- **Lightweight** — pure vanilla JavaScript (~240 lines).  
+- **Lightweight** — pure vanilla JavaScript (~180 lines).  
 - **Server-agnostic** — no special setup required; bypasses CORS restrictions.  
 - **Reusable** — works with any HTML structure you define.  
 
