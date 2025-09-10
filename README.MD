@@ -17,12 +17,19 @@ InjectJS uses the native **`XMLHttpRequest()`** function to fetch and insert con
 
 ## Basic Usage
 
+The ```<in-ject>``` tag replaces itself with the file you specify
+(default_head.html. welcome.html, and print_copyright.html here).
+
 ```html
 <!-- home.html -->
 <head>
   <script type="module" src="js/inject.js"></script>
   <in-ject src="components/default_head.html"></in-ject>
 </head>
+<body>
+  <in-ject src="components/welcome.html"></in-ject>
+  <in-ject src="components/print_copyright.html"></in-ject>
+</body>
 
 <!-- default_head.html -->
 <head>
@@ -31,5 +38,15 @@ InjectJS uses the native **`XMLHttpRequest()`** function to fetch and insert con
   <link rel="stylesheet" href="css/default.css">
   <!-- more head elements... -->
 </head>
+
+<!-- print_copyright.html -->
+<div style="text-align: center;">
+  <span>
+    &copy;<script>${new Date().getFullYear()}</script> Modest Records Nashville
+  </span>
+</div>
+ 
+<!-- welcome.html -->
+Welcome to the best site ever!
+
 ```
-The ```<in-ject>``` tag replaces itself with the file you specify (default_head.html here).
